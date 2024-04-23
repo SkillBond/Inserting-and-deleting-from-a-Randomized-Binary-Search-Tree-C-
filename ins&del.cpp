@@ -95,7 +95,7 @@ int main() {
     root = insert(std::move(root), 11);
     root = insert(std::move(root), 10);
 
-    // Удаляем элемент
+    // Удаляем элемент( корень не стоит удалять во избежании ошибки)
     root = deleteNode(std::move(root), 7);
     // Если не нужно удалять элемент поставьте 0
 
